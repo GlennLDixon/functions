@@ -56,30 +56,42 @@
 // go('circles', 12)
 // go('forward', 82)
 
-const words = [
-    "The", "killing", "complex", "houses",
-    "married", "kittens", "and", "single",
-    "soldiers", "and", "their", "kleptomaniacal",
-    "families"
-]
+// const words = [
+//     "The", "killing", "complex", "houses",
+//     "married", "kittens", "and", "single",
+//     "soldiers", "and", "their", "kleptomaniacal",
+//     "families"
+// ]
 
 
 
-const wordsfilter = () => {
-    const newArray = []
-    for (const word of words) {
-        if(word.startsWith('k')) {
-            newArray.push(word)
-        }
+// const wordsfilter = () => {
+//     const newArray = []
+//     for (const word of words) {
+//         if(word.startsWith('k')) {
+//             newArray.push(word)
+//         }
+//     }
+//     return newArray;
+// }
+
+// const wordJoin = () => {
+//     const newWord = words.join(' ')
+//     return newWord;
+// }
+
+
+// console.log(wordsfilter())
+// console.log(wordJoin())
+
+const headOrTail = () => {
+    const coin = Math.floor(Math.random() * 2)
+
+    if (coin === 1 ) {
+        console.log('Sven hooked a tuna! :)')
+    } else {
+        console.log('Sven came up empty-handed. :(')
     }
-    return newArray;
 }
 
-const wordJoin = () => {
-    const newWord = words.join(' ')
-    return newWord;
-}
-
-
-console.log(wordsfilter())
-console.log(wordJoin())
+headOrTail()
