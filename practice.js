@@ -96,15 +96,32 @@
 
 // headOrTail()
 
-const orderMeal = (sandwich, side, drink, dessert) => {
-    return {
-        "sandwich": sandwich,
-        "side": side,
-        "drink": drink,
-        "dessert": dessert
-    }
+// const orderMeal = (sandwich, side, drink, dessert) => {
+//     return {
+//         "sandwich": sandwich,
+//         "side": side,
+//         "drink": drink,
+//         "dessert": dessert
+//     }
+// }
+
+// const takeout = orderMeal("chick-fil-a", "waffle fries", "large lemonade", "pie")
+// console.log(takeout)
+
+const twice = number => number * 2
+const timesFive = number => number * 5
+const square = number => number * number
+
+const bigify = (number, operationFunction) => {
+    const result = operationFunction(number)
+    return result
 }
 
-const takeout = orderMeal("chick-fil-a", "waffle fries", "large lemonade", "pie")
-console.log(takeout)
+const number = 7
+const by2 = bigify(number, twice)
+const by5 = bigify(number, timesFive)
+const byItself = bigify(number, square)
 
+console.log(by2)
+console.log(by5)
+console.log(byItself)
