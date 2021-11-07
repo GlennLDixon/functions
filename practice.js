@@ -108,20 +108,59 @@
 // const takeout = orderMeal("chick-fil-a", "waffle fries", "large lemonade", "pie")
 // console.log(takeout)
 
-const twice = number => number * 2
-const timesFive = number => number * 5
-const square = number => number * number
+// const twice = number => number * 2
+// const timesFive = number => number * 5
+// const square = number => number * number
 
-const bigify = (number, operationFunction) => {
-    const result = operationFunction(number)
-    return result
+// const bigify = (number, operationFunction) => {
+//     const result = operationFunction(number)
+//     return result
+// }
+
+// const number = 7
+// const by2 = bigify(number, twice)
+// const by5 = bigify(number, timesFive)
+// const byItself = bigify(number, square)
+
+// console.log(by2)
+// console.log(by5)
+// console.log(byItself)
+
+
+// Functions that are holding the chores down
+const mondayChores = obj1 => {
+    return `${obj1.firstName} ${obj1.lastName} mowed the grass`
+    
 }
 
-const number = 7
-const by2 = bigify(number, twice)
-const by5 = bigify(number, timesFive)
-const byItself = bigify(number, square)
+const tuesdayChores = obj2 => {
+    return `${obj2.firstName} ${obj2.lastName} swept the floor`
+    
+}
 
-console.log(by2)
-console.log(by5)
-console.log(byItself)
+const wednesdayChores = obj3 => {
+    return `${obj3.firstName} ${obj3.lastName} clean the pool`
+}
+
+const thursdayChores = obj4 => {
+    return `${obj4.firstName} ${obj4.lastName} wash the car`
+}
+
+const fridayChores = obj5 => {
+    return `${obj5.firstName} ${obj5.lastName} painted the walls`
+}
+
+const saturdayChores = obj6 => {
+    return `${obj6.firstName} ${obj6.lastName} painted the walls`
+}
+
+// 
+const currentDay = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+
+const dayPlanner = (chore, person, day) => {
+    const plan = `${chore(person)} ${day}`
+    return plan
+}
+
+const myDay = dayPlanner(tuesdayChores, {firstName: "Glenn", lastName: "Dixon"}, currentDay[1])
+console.log(myDay)
