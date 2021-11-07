@@ -84,14 +84,27 @@
 // console.log(wordsfilter())
 // console.log(wordJoin())
 
-const headOrTail = () => {
-    const coin = Math.floor(Math.random() * 2)
+// const headOrTail = () => {
+//     const coin = Math.floor(Math.random() * 2)
 
-    if (coin === 1 ) {
-        console.log('Sven hooked a tuna! :)')
-    } else {
-        console.log('Sven came up empty-handed. :(')
+//     if (coin === 1 ) {
+//         console.log('Sven hooked a tuna! :)')
+//     } else {
+//         console.log('Sven came up empty-handed. :(')
+//     }
+// }
+
+// headOrTail()
+
+const orderMeal = (sandwich, side, drink, dessert) => {
+    return {
+        "sandwich": sandwich,
+        "side": side,
+        "drink": drink,
+        "dessert": dessert
     }
 }
 
-headOrTail()
+const takeout = orderMeal("chick-fil-a", "waffle fries", "large lemonade", "pie")
+console.log(takeout)
+
