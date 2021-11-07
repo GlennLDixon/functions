@@ -157,10 +157,10 @@ const saturdayChores = obj6 => {
 // 
 const currentDay = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
-const dayPlanner = (chore, person, day) => {
-    const plan = `${chore(person)} ${day}`
+const dayPlanner = (chore1, chore2, chore3, person, day) => {
+    const plan = `On ${day} ${chore1(person)}, next ${chore2(person)}, last thing on the list ${chore3(person)}`
     return plan
 }
 
-const myDay = dayPlanner(tuesdayChores, {firstName: "Glenn", lastName: "Dixon"}, currentDay[1])
+const myDay = dayPlanner(tuesdayChores, wednesdayChores, mondayChores, {firstName: "Glenn", lastName: "Dixon"}, currentDay[1])
 console.log(myDay)
