@@ -128,39 +128,47 @@
 
 
 // Functions that are holding the chores down
-const mondayChores = obj1 => {
-    return `${obj1.firstName} ${obj1.lastName} mowed the grass`
+// const mondayChores = obj1 => {
+//     return `${obj1.firstName} ${obj1.lastName} mowed the grass`
     
-}
+// }
 
-const tuesdayChores = obj2 => {
-    return `${obj2.firstName} ${obj2.lastName} swept the floor`
+// const tuesdayChores = obj2 => {
+//     return `${obj2.firstName} ${obj2.lastName} swept the floor`
     
+// }
+
+// const wednesdayChores = obj3 => {
+//     return `${obj3.firstName} ${obj3.lastName} clean the pool`
+// }
+
+// const thursdayChores = obj4 => {
+//     return `${obj4.firstName} ${obj4.lastName} wash the car`
+// }
+
+// const fridayChores = obj5 => {
+//     return `${obj5.firstName} ${obj5.lastName} painted the walls`
+// }
+
+// const saturdayChores = obj6 => {
+//     return `${obj6.firstName} ${obj6.lastName} painted the walls`
+// }
+
+// // 
+// const currentDay = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+
+// const dayPlanner = (chore1, chore2, chore3, person, day) => {
+//     const plan = `On ${day} ${chore1(person)}, next ${chore2(person)}, last thing on the list ${chore3(person)}`
+//     return plan
+// }
+
+// const myDay = dayPlanner(tuesdayChores, wednesdayChores, mondayChores, {firstName: "Glenn", lastName: "Dixon"}, currentDay[1])
+// console.log(myDay)
+
+const cookies = ["Oatmeal Raisin", "Chocolate Chip", "Sugar", "Peanut Butter", "Snickerdoodle", "Ginger"]
+let y = 1
+
+for (let y = 1; y < cookies.length; y++) {
+    const currentCookie = cookies[y]
+    console.log(`Mmmmmmm... that's a good ${currentCookie} cookie`)
 }
-
-const wednesdayChores = obj3 => {
-    return `${obj3.firstName} ${obj3.lastName} clean the pool`
-}
-
-const thursdayChores = obj4 => {
-    return `${obj4.firstName} ${obj4.lastName} wash the car`
-}
-
-const fridayChores = obj5 => {
-    return `${obj5.firstName} ${obj5.lastName} painted the walls`
-}
-
-const saturdayChores = obj6 => {
-    return `${obj6.firstName} ${obj6.lastName} painted the walls`
-}
-
-// 
-const currentDay = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-
-const dayPlanner = (chore1, chore2, chore3, person, day) => {
-    const plan = `On ${day} ${chore1(person)}, next ${chore2(person)}, last thing on the list ${chore3(person)}`
-    return plan
-}
-
-const myDay = dayPlanner(tuesdayChores, wednesdayChores, mondayChores, {firstName: "Glenn", lastName: "Dixon"}, currentDay[1])
-console.log(myDay)
